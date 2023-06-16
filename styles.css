@@ -145,3 +145,114 @@ body {
     transition-duration: 1s;
   }
 }
+/* the home styling starts here */
+#home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.description h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: none;
+  font-family: Playfair Display Italic;
+}
+
+.description p {
+  font-size: 1.2rem;
+  color: #4bef10;
+  text-transform: capitalize;
+  font-family: Griffiths Font;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Additional styles for responsiveness can be added for larger screens */
+@media (min-width: 992px) {
+  /* Desktop devices */
+  #home {
+    height: 100vh;
+  }
+
+  .description h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: none;
+    font-family: Playfair Display Italic;
+  }
+
+  .description p {
+    font-size: 1.3rem;
+    color: #4bef10;
+    text-transform: capitalize;
+    font-family: Orpheus Italic;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablets */
+  #home {
+    height: 70vh;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile devices */
+  #home {
+    height: 50vh;
+  }
+
+  .description h1 {
+    font-size: 1.2rem;
+  }
+
+  .description p {
+    font-family: garamond;
+    font-size: 1.1rem;
+    line-height: normal;
+    font-weight: 600;
+    color: #4bef10;
+  }
+}
