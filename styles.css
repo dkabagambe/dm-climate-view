@@ -256,3 +256,81 @@ body {
     color: #4bef10;
   }
 }
+/* the about section starts from here  */
+#about {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* divider */
+.kccwg_divider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.kccwg_divider span {
+  margin-top: 5px;
+}
+.kccwg_divider:before {
+  content: "";
+  height: 1.5px;
+  background: #c6c6c6;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 0.45em 0 0;
+}
+
+.kccwg_divider:after {
+  content: "";
+  height: 1.5px;
+  background: #c6c6c6;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 0 0 0.45em;
+}
+.aboutkccwg_row {
+  margin: 0px;
+  background-color: transparent;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+.aboutkccwg-desc > p {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 2;
+}
+.text-dark {
+  color: #212121 !important;
+}
+.aboutkccwg-img > img {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-2px);
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.2);
+}
