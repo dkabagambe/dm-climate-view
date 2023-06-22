@@ -37,6 +37,12 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mdb-lightbox@2.4.1/dist/mdb-lightbox.min.css"
+    />
+
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -112,6 +118,14 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
+      nonce="BT2QKkUL"
+    ></script>
     <!-- ====header starts here===== -->
 
     <header>
@@ -129,7 +143,7 @@
             <a class="navbar-brand" href="index.html">
               <img
                 src="images/DM Logo-modified.png"
-                height="40"
+                height="50"
                 alt="Dm Climate View"
                 title="Dm Climate View"
               />
@@ -243,28 +257,17 @@
                     ><i class="fas fa-users"></i>&nbsp;Membership</a
                   >
                 </li>
-
                 <li class="nav-item">
-                  <a class="nav-link" href="">DM</a>
+                  <a class="nav-link donate" href="">
+                    <i class="fas fa-heart" data-offset="20"></i>&nbsp;DONATE
+                  </a>
                 </li>
+
+                <!-- <li class="nav-item">
+                  <a href="" class="donate">DONATE NOW</a>
+                </li> -->
               </ul>
               <!-- Links -->
-
-              <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                  <a class="nav-link" href="" target="_blank"
-                    ><i class="fab fa-facebook-f text-white mr-4"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="" target="_blank"
-                    ><i class="fab fa-twitter text-white mr-4"></i
-                  ></a>
-                </li>
-                <!--  <li class="nav-item">
-                               <a class="nav-link" href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
-                           </li> -->
-              </ul>
             </div>
             <!-- Collapsible content -->
           </div>
@@ -288,8 +291,8 @@
         <div class="description">
           <h1>DM Climateview UG LTD</h1>
           <p>
-            Building <span style="text-transform: lowercase">a</span> more
-            sustainable world
+            "Building <span style="text-transform: lowercase">a</span> more
+            sustainable world"
           </p>
         </div>
       </div>
@@ -459,16 +462,160 @@
 
       <!-- end of corousel -->
       <!-- <div class="row"> -->
-      <div class="col-12 kccwg_divider">
-        <span
-          ><h5 class="h5-responsive text-dark">
-            <strong></strong></h5
-        ></span>
-      </div>
+
       <!-- </div> -->
     </div>
     <!-- endof container -->
     <!-- ============================================================================================================================ -->
+    <!-- start of media-->
+    <div class="container-fluid">
+      <div class="co-lg-12 kccwg_divider">
+        <span
+          ><h5 class="h5-responsive text-dark">
+            <strong>Social Media</strong>
+          </h5></span
+        >
+      </div>
+
+      <div class="row">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 col-12"
+          style="padding-top: 10px; padding-bottom: 10px"
+        >
+          <div>
+            <a
+              class="twitter-timeline"
+              data-width="444"
+              data-height="400"
+              data-theme="light"
+              href="https://twitter.com/MusiriDavid?ref_src=twsrc%5Etfw"
+              >Tweets by MusiriDavid</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 col-12"
+          style="padding-top: 10px; padding-bottom: 10px"
+        >
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/MusiriDavid"
+            data-tabs="timeline"
+            data-width="500"
+            data-height="400"
+            data-small-header="true"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          >
+            <blockquote
+              cite="https://www.facebook.com/MusiriDavid"
+              class="fb-xfbml-parse-ignore"
+            >
+              <a href="https://www.facebook.com/MusiriDavid">David Musiri</a>
+            </blockquote>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 col-12"
+          style="padding-top: 10px; padding-bottom: 10px"
+        >
+          <a
+            class="twitter-timeline"
+            data-width="444"
+            data-height="400"
+            data-theme="light"
+            href="https://twitter.com/stopEACOP?ref_src=twsrc%5Etfw"
+            >Tweets by stopEACOP</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <!-- endof container -->
+
+    <!-- end of media -->
+    <!-- Gallery -->
+    <div class="container-fluid">
+      <!-- <div class="row"> -->
+      <div class="col-12 kccwg_divider">
+        <span
+          ><h5 class="h5-responsive text-dark">
+            <strong>Gallery</strong>
+          </h5></span
+        >
+      </div>
+      <div id="mdb-lightbox-ui"></div>
+      <div class="mdb-lightbox">
+        <div class="row ml-2 mr-2">
+          <!--ml-3 mr-3  pb-3 pt-1 -->
+          <figure class="col-md-3 col-12">
+            <a
+              href="images/f965ba18-fc45-4358-9884-65bdb7d85320.jfif"
+              data-size="1600x780"
+              data-attribute="SRL"
+            >
+              <img
+                src="images/f965ba18-fc45-4358-9884-65bdb7d85320.jfif"
+                class="img-fluid rounded z-depth-1-half"
+              />
+            </a>
+            <figcaption>He has always fought for what is right</figcaption>
+          </figure>
+          <figure class="col-md-3 col-12">
+            <a href="images/ecop.jpg" data-size="1600x780" data-attribute="SRL">
+              <img
+                src="images/ecop.jpg"
+                class="img-fluid rounded z-depth-1-half"
+              />
+            </a>
+            <figcaption>Activists for climate change</figcaption>
+          </figure>
+          <figure class="col-md-3 col-12">
+            <a
+              href="images/ff95eada-9917-475d-bca6-d73319c32e4a.jfif"
+              data-size="1600x780"
+              data-attribute="SRL"
+            >
+              <img
+                src="images/ff95eada-9917-475d-bca6-d73319c32e4a.jfif"
+                class="img-fluid rounded z-depth-1-half"
+              />
+            </a>
+            <figcaption>
+              Tried in court because of fighting for climate
+            </figcaption>
+          </figure>
+          <figure class="col-md-3 col-12">
+            <a
+              href="images/766b5487-d06f-4371-bcb2-81f956facb12.jfif"
+              data-size="1600x780"
+              data-attribute="SRL"
+            >
+              <img
+                src="images/766b5487-d06f-4371-bcb2-81f956facb12.jfif"
+                class="img-fluid rounded z-depth-1-half"
+              />
+            </a>
+            <figcaption>fighting for climate</figcaption>
+          </figure>
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of mdblight -->
+    </div>
+    <!-- end of container -->
+
+    <!-- end of gallery -->
     <!-- partners -->
     <div class="container-fluid">
       <div class="col-12 kccwg_divider py-2">
@@ -484,8 +631,8 @@
             <div class="item">
               <a href="" target="_blank">
                 <img
-                  src="images/DM Logo.png"
-                  alt="CA"
+                  src="images/solidarity uganda.png"
+                  alt="solidarity Uganda"
                   title="our partners"
                   style="width: 150px; height: 100px; object-fit: cover"
                 />
@@ -494,8 +641,19 @@
             <div class="item">
               <a href="" target="_blank">
                 <img
-                  src="images/DM Logo.png"
-                  alt="CA"
+                  src="images/GAYO.png"
+                  alt="Green Africa Youth"
+                  title="our partners"
+                  style="width: auto; height: 100px; object-fit: cover"
+                />
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="" target="_blank">
+                <img
+                  src="images/AFIEGO.png"
+                  alt="AFIEGO"
                   title="our partners"
                   style="width: 150px; height: 100px; object-fit: cover"
                 />
@@ -505,8 +663,45 @@
             <div class="item">
               <a href="" target="_blank">
                 <img
-                  src="images/DM Logo.png"
-                  alt="CA"
+                  src="images/ife-logo.png"
+                  alt="ife"
+                  title="our partners"
+                  style="
+                    width: 250px;
+                    height: 100px;
+                    object-fit: cover;
+                    padding: 2px auto;
+                  "
+                />
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="" target="_blank">
+                <img
+                  src="images/solidarity uganda.png"
+                  alt="solidarity Uganda"
+                  title="our partners"
+                  style="width: 150px; height: 100px; object-fit: cover"
+                />
+              </a>
+            </div>
+            <div class="item">
+              <a href="" target="_blank">
+                <img
+                  src="images/GAYO.png"
+                  alt="Green Africa Youth"
+                  title="our partners"
+                  style="width: auto; height: 100px; object-fit: cover"
+                />
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="" target="_blank">
+                <img
+                  src="images/AFIEGO.png"
+                  alt="AFIEGO"
                   title="our partners"
                   style="width: 150px; height: 100px; object-fit: cover"
                 />
@@ -516,98 +711,15 @@
             <div class="item">
               <a href="" target="_blank">
                 <img
-                  src="images/DM Logo.png"
-                  alt="CA"
+                  src="images/ife-logo.png"
+                  alt="ife"
                   title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/DM Logo.png"
-                  alt="CA"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
+                  style="
+                    width: 250px;
+                    height: 100px;
+                    object-fit: cover;
+                    padding: 2px auto;
+                  "
                 />
               </a>
             </div>
@@ -805,6 +917,7 @@
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdb-lightbox@2.4.1/dist/mdb-lightbox.min.js"></script>
     <script>
       // Wait for the document to load
       $(document).ready(function () {

@@ -90,6 +90,23 @@ h6 {
   padding-right: 1rem !important;
   font-weight: 500;
 }
+.donate {
+  display: inline-block;
+  background-color: blue;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.donate:hover {
+  background: #2e5f00;
+  color: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
 
 .btn-outline-kccwg-green {
   border: 2px solid #016533 !important;
@@ -205,15 +222,17 @@ h6 {
   color: #fff;
   text-transform: none;
   font-family: Playfair Display Italic;
+  color: #fff;
 }
 
 .description p {
   font-size: 1.2rem;
-  color: #4bef10;
+  /* color: #4bef10; */
   text-transform: capitalize;
   font-family: Griffiths Font;
   font-size: 1.5rem;
   font-weight: 600;
+  color: #fff;
 }
 
 /* Additional styles for responsiveness can be added for larger screens */
@@ -232,9 +251,9 @@ h6 {
 
   .description p {
     font-size: 1.3rem;
-    color: #4bef10;
+    color: #ffffff;
     text-transform: capitalize;
-    font-family: "Orpheus Italic", Georgia, Times New Roman, serif;
+    font-family: cormorant;
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -621,4 +640,13 @@ h6 {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+/* this is the css for gallery */
+/* Custom styles for the close button */
+.mdb-lightbox-close {
+  color: red;
+  font-size: 20px;
+}
+.mdb-lightbox img:hover {
+  cursor: pointer;
 }
