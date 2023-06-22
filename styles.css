@@ -457,7 +457,7 @@ h6 {
 .single-cta i {
   color: #4bef10;
   font-size: 30px;
-  float: left;
+  text-align: left;
   margin-top: 8px;
 }
 .cta-text {
@@ -469,10 +469,11 @@ h6 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
+  text-align: center;
 }
 .cta-text span {
   color: #757575;
-  font-size: 15px;
+  font-size: 18px;
 }
 .footer-content {
   position: relative;
@@ -555,6 +556,8 @@ h6 {
 .footer-widget ul li a {
   color: #878787;
   text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1rem;
 }
 .subscribe-form {
   position: relative;
@@ -566,6 +569,7 @@ h6 {
   background: #2e2e2e;
   border: 1px solid #2e2e2e;
   color: #fff;
+  outline: none;
 }
 .subscribe-form button {
   position: absolute;
