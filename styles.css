@@ -143,6 +143,7 @@ h6 {
   }
   .navbar-collapse.show {
     display: block !important;
+    height: 100%;
   }
 }
 
@@ -200,6 +201,15 @@ h6 {
     height: 40px;
     width: auto;
     margin-bottom: 10px;
+  }
+  .navbar:not(.top-nav-collapse) {
+    background-color: #016533 !important;
+  }
+  @media (max-width: 992px) {
+    .navbar .nav-item .nav-link {
+      margin: 5px 5px; /* Adjust the margin as per your desired spacing */
+      padding: 0;
+    }
   }
 }
 @media (min-width: 600px) {
@@ -504,30 +514,42 @@ h6 {
 .footer-section {
   background: #1e1e1e; /* 151414 */
   position: relative;
+  width: 100%;
+  height: auto;
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
+.single-cta {
+  display: flex;
+  align-items: center;
+}
 .single-cta i {
   color: #4bef10;
   font-size: 30px;
-  text-align: left;
-  margin-top: 8px;
+  font-size: 30px;
+  margin-right: 10px; /* Adjust the margin as needed */
 }
 .cta-text {
-  padding-left: 15px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5px;
+  margin: 10px;
 }
 .cta-text h4 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
-  text-align: center;
+  text-align: center; /* Adjusted to 'left' instead of 'center' */
 }
 .cta-text span {
   color: #757575;
   font-size: 18px;
+  font-weight: 500;
+  font-family: garamond;
+  text-decoration: none;
 }
 .footer-content {
   position: relative;
