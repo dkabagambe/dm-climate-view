@@ -85,6 +85,11 @@ h6 {
 
 .navbar .nav-item .nav-link {
   display: block;
+  color: snow;
+}
+.navbar .nav-item .nav-link:hover {
+  display: block;
+  color: rgb(163, 162, 162);
 }
 .navbar {
   padding-right: 1rem !important;
