@@ -112,7 +112,11 @@ h6 {
   color: #ffffff;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
-
+.logo {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
 .btn-outline-kccwg-green {
   border: 2px solid #016533 !important;
   color: #996533 !important;
