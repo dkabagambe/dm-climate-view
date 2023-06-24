@@ -5,22 +5,22 @@
   padding: 0;
   margin: 0;
 }
+
+html,
 body {
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
   font-family: "Roboto", sans-serif;
   background-color: #eee;
-  position: relative;
-  height: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
 }
+
 body,
 h1,
 h2,
@@ -50,18 +50,14 @@ h6 {
 }
 .navbar {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 2rem 0;
+  width: 100%;
 }
 .navbar-nav {
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -188,6 +184,13 @@ h6 {
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
   .kccwg_responsive_image {
     max-width: 100%;
     height: auto;
@@ -199,6 +202,17 @@ h6 {
     height: 40px;
     width: auto;
     margin-bottom: 10px;
+    padding-left: 15px;
+  }
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    padding-right: 2vw;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
   .navbar:not(.top-nav-collapse) {
     background-color: #016533 !important;
@@ -340,12 +354,13 @@ h6 {
 }
 /* the about section starts from here  */
 #about {
-  height: 100%;
+  position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  overflow: auto;
 }
 
 /* divider */
@@ -401,13 +416,26 @@ h6 {
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
 }
+.aboutkccwg-desc {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 10px 5px;
+}
 .aboutkccwg-desc > p {
   font-style: normal;
   font-size: 16px;
   line-height: 2;
+  word-wrap: break-word;
 }
+.eacop {
+  overflow: hidden;
+  max-height: 200px; /* Adjust the value as per your requirements */
+}
+
 .text-dark {
   color: #212121 !important;
+  position: relative;
 }
 .aboutkccwg-img > img {
   width: 100%;
@@ -624,7 +652,7 @@ h6 {
 }
 .footer-widget ul li {
   display: inline-block;
-  float: left;
+
   width: 50%;
   margin-bottom: 12px;
 }
