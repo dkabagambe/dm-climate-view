@@ -417,17 +417,14 @@
             >
           </div>
           <div class="box">
-            <iframe
-              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100063788546140%2Fvideos%2F1484320915381911%2F&show_text=false&width=560&t=0"
-              width="100%"
-              height="auto"
-              style="border: none; overflow: hidden"
-              scrolling="no"
-              frameborder="0"
-              allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              allowfullscreen="true"
-            ></iframe>
+            <video controls width="100%">
+              <source src="images/musiri.mp4" type="video/mp4" />
+              <!-- Provide alternative video formats for broader browser support -->
+              <source src="images/musiri.mp4" type="video/webm" />
+              <!-- Add more <source> elements for additional video formats -->
+              <!-- Add a fallback message for browsers that do not support HTML5 video -->
+              Your browser does not support the video tag.
+            </video>
             <h3>EACOP</h3>
             <p>
               Watch this Video showing a group of university students who were

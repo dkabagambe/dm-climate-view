@@ -362,7 +362,7 @@ h6 {
 }
 #about p {
   font-family: garamond;
-  font-size: 18px;
+  font-size: 20px;
 }
 #socialmedia {
   position: relative;
@@ -514,7 +514,7 @@ h6 {
 }
 
 .box img,
-.box > iframe {
+.box > video {
   width: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
