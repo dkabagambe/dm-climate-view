@@ -136,20 +136,40 @@ h6 {
   font-weight: 400 !important;
 }
 /* Add this CSS code to show the menu on mobile devices */
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    display: none !important;
+
+@media (max-width: 1124px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 100%;
   }
-  .navbar-collapse.show {
-    display: block !important;
-    height: 100%;
+  .navbar .nav-item .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
-
-@media (max-width: 992px) {
+@media (min-width: 1124px) {
+  /* Styles for screens below and above 1124px width */
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
   .navbar .nav-item .nav-link {
-    padding-right: 6px;
-    padding-left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
