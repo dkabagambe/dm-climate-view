@@ -382,6 +382,7 @@ h6 {
   margin-right: auto;
   margin-left: auto;
   overflow: auto;
+  max-width: 100%;
 }
 #about p {
   font-family: garamond;
