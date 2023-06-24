@@ -754,17 +754,16 @@ h6 {
 }
 .copyright-area {
   background: #282829;
-  padding: 25px 0;
+  margin: 10px 0px 10px 0px;
+  height: 100%;
+  padding: 0px 7px 20px 5px;
 }
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
-}
+
 .copyright-text p {
   color: #4bef10;
   font-size: 18px;
   font-family: dosis;
+  text-align: center;
 }
 .copyright-text p span a {
   color: #fff;
@@ -789,6 +788,9 @@ h6 {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+  text-align: center;
+  font-family: cormorant;
+  text-decoration: none;
 }
 /* this is the css for gallery */
 /* Custom styles for the close button */
