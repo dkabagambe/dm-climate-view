@@ -606,6 +606,7 @@ h6 {
   font-size: 30px;
   font-size: 30px;
   margin-right: 10px; /* Adjust the margin as needed */
+  margin-left: 15px;
 }
 .cta-text {
   display: flex;
@@ -623,10 +624,20 @@ h6 {
 }
 .cta-text span {
   color: #757575;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 500;
   font-family: garamond;
+  margin-left: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+.cta-text a {
+  list-style: none;
   text-decoration: none;
+  font-size: 1.1rem;
+  margin: 10px;
+  text-align: center;
+  font-family: dosis;
 }
 .footer-content {
   position: relative;
