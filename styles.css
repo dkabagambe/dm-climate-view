@@ -656,13 +656,13 @@ h6 {
   margin-bottom: 30px;
 }
 .footer-logo img {
-  max-width: 150px;
+  max-width: 130px;
 }
 .footer-text p {
   margin-bottom: 14px;
-  font-size: 14px;
+  font-size: 1.1rem;
   color: #7e7e7e;
-  line-height: 28px;
+  font-family: garamond;
 }
 .footer-social-icon span {
   color: #fff;
@@ -706,14 +706,16 @@ h6 {
   left: 0;
   bottom: -15px;
   height: 2px;
-  width: 50px;
+  width: 60px;
   background: #4bef10;
+  text-align: center;
+  margin-left: 10px;
 }
 .footer-widget ul li {
   display: inline-block;
-
   width: 50%;
   margin-bottom: 12px;
+  margin-right: 20px;
 }
 .footer-widget ul li a:hover {
   color: #4bef10;
@@ -727,6 +729,7 @@ h6 {
 .subscribe-form {
   position: relative;
   overflow: hidden;
+  height: auto;
 }
 .subscribe-form input {
   width: 100%;
