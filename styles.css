@@ -360,6 +360,10 @@ h6 {
   margin-left: auto;
   overflow: auto;
 }
+#about p {
+  font-family: garamond;
+  font-size: 18px;
+}
 #socialmedia {
   position: relative;
   width: 100%;
@@ -368,7 +372,21 @@ h6 {
   overflow: auto;
   text-align: center;
 }
-
+#gallery {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: auto;
+  text-align: center;
+}
+#gallery figcaption {
+  font-size: 20px;
+  padding: 5px 10px;
+  font-weight: normal;
+  font-family: garamond;
+  text-transform: lowercase;
+}
 /* divider */
 .kccwg_divider {
   display: -webkit-box;
