@@ -800,3 +800,108 @@ h6 {
 .mdb-lightbox img:hover {
   cursor: pointer;
 }
+/* the about us styles  */
+#abt {
+  background-color: rgb(110, 116, 116);
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#abt img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#about ul {
+  font-family: garamond;
+  font-size: 20px;
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #1e1e1e;
+}
+#about ul li {
+  list-style-type: none;
+  line-height: 1.5;
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  #abt {
+    height: auto;
+  }
+}
+
+/* this is the styles for the team */
+
+/* team member css */
+#team {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+#team h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #1e1e1e;
+  display: grid;
+  place-items: center;
+  padding: 20px 10px;
+  font-family: garamond;
+}
+#team p {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #000;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  padding: 10px;
+  font-family: cormorant;
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.team-member .image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.team-member .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.team-member h4 {
+  margin: 0;
+  font-family: garamond;
+  color: #333;
+  font-weight: 520;
+}
