@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     />
 
     <link
@@ -31,7 +32,7 @@
 
     <meta name="author" content="daniel kabagambe, danielkabagambe@gmail.com" />
     <!--  author of a page -->
-    <title>Home | Dm Climate View</title>
+    <title>Gallery | Dm Climate View</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -42,7 +43,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/mdb-lightbox@2.4.1/dist/mdb-lightbox.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -184,7 +188,6 @@
                     ><i class="fas fa-images"></i>&nbsp;Gallery</a
                   >
                 </li>
-                <!-- end of media dropdown -->
 
                 <li class="nav-item">
                   <a class="nav-link" href=""
@@ -201,10 +204,6 @@
                     <i class="fas fa-heart" data-offset="20"></i>&nbsp;DONATE
                   </a>
                 </li>
-
-                <!-- <li class="nav-item">
-                  <a href="" class="donate">DONATE NOW</a>
-                </li> -->
               </ul>
               <!-- Links -->
             </div>
@@ -216,239 +215,84 @@
       </div>
       <!--/.Navbar-->
     </header>
-    <!-- ====header ends here===== -->
-    <!-- ====Home starts here===== -->
-    <section id="home">
-      <div class="video-container">
-        <video autoplay muted loop>
-          <source
-            src="images/This is Hoima-Butiaba-Wanseko Road project expected to support movement of equipment and personnel to the Tilenga and Kingfisher projects in the Albertine region. The  project is at substantial completion and set fo.mp4"
-            type="video/mp4"
+    <!-- =---the image gallery starts from here---= -->
+    <!-- Gallery -->
+    <section class="gallery">
+      <h5>images showing different activism</h5>
+
+      <div id="gallery">
+        <div class="thumbnail" onclick="openModal();currentSlide(1)">
+          <img
+            src="images/05c47d0c-1d04-4d65-9521-d4122d424de4.jfif"
+            alt="Image 1"
           />
-        </video>
-        <div class="overlay"></div>
-        <div class="description">
-          <h1>DM Climateview UG LTD</h1>
-          <p>
-            "Building <span style="text-transform: lowercase">a</span> more
-            sustainable world"
-          </p>
+        </div>
+        <div class="thumbnail" onclick="openModal();currentSlide(2)">
+          <img
+            src="images/65b4b7a3-f5d5-48e2-9da0-33989c4a201f.jfif"
+            alt="Image 2"
+          />
+        </div>
+        <div class="thumbnail" onclick="openModal();currentSlide(3)">
+          <img
+            src="images/766b5487-d06f-4371-bcb2-81f956facb12.jfif"
+            alt="Image 3"
+          />
+        </div>
+        <div class="thumbnail" onclick="openModal();currentSlide(4)">
+          <img
+            src="images/f965ba18-fc45-4358-9884-65bdb7d85320.jfif"
+            alt="Image 4"
+          />
+        </div>
+        <div class="thumbnail" onclick="openModal();currentSlide(5)">
+          <img src="images/court room.jfif" alt="Image 5" />
+        </div>
+        <div class="thumbnail" onclick="openModal();currentSlide(6)">
+          <img src="images/ecop.jpg" alt="Image 6" />
         </div>
       </div>
-    </section>
-    <!-- =========the video section ends here=========== -->
-    <section id="about">
-      <!-- about kccwg -->
-      <div class="container-fluid">
-        <div class="col-12 kccwg_divider">
-          <span
-            ><h4 class="h5-responsive text-dark">
-              <strong>About DM Climateview UG LTD</strong>
-            </h4></span
-          >
-        </div>
 
-        <div class="row aboutkccwg_row p-2">
-          <div class="col-lg-4 col-md-12 col-12">
-            <div class="aboutkccwg-img">
-              <img
-                src="images/arusha.jpg"
-                alt="about kccwg"
-                class="img-fluid w-100"
-              />
-            </div>
-            <div class="row">
-              <div class="col-12 mb-2">
-                <!-- socials -->
-                <div class="d-flex flex-row justify-content-center">
-                  <div class="p-4">
-                    <a
-                      href="https://www.facebook.com/MusiriDavid"
-                      target="_blank"
-                      ><i
-                        class="fab fa-facebook fa-2x"
-                        style="color: #016533"
-                      ></i
-                    ></a>
-                  </div>
-                  <div class="p-4">
-                    <a href="https://twitter.com/ClimateView1" target="_blank"
-                      ><i
-                        class="fab fa-twitter fa-2x"
-                        style="color: #016533"
-                      ></i
-                    ></a>
-                  </div>
-                  <div class="p-4">
-                    <a href="" target="_blank"
-                      ><i
-                        class="fab fa-youtube fa-2x"
-                        style="color: #016533"
-                      ></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 col-md-12 col-12">
-            <div class="aboutkccwg-desc mb-2">
-              <p>
-                DM ClimateView UG LTD is a non-profit organization that was
-                founded in February 2020 by a group of passionate climate change
-                activists from Makerere University. In May 2023, it obtained
-                official registration with the Uganda Registration Services
-                Bureau (URSB)
-              </p>
-              <p>
-                The primary focus of DM ClimateView UG LTD is to raise awareness
-                about climate change , provide research,and advocate for action.
-                They achieve this through organizing events, campaigns, and
-                providing resources that empower individuals to take meaningful
-                steps towards addressing climate change. By engaging with the
-                community and sharing knowledge, the organization aims to
-                contribute to a more sustainable future.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- endof container -->
-
-      <!-- end of about -->
-    </section>
-    <!-- news kccwg -->
-    <div class="container-fluid">
-      <!-- equal -->
-      <!-- <div class="row"> -->
-      <div class="col-12 kccwg_divider">
-        <span
-          ><h5 class="h5-responsive text-dark">
-            <strong>Events of our activism</strong>
-          </h5></span
-        >
-      </div>
-      <!-- </div> -->
-      <!-- start of corousel -->
-      <section id="about">
-        <div class="container">
-          <div class="box">
-            <img src="images/ecop.jpg" alt="Image 2" />
-            <h3>EACOP</h3>
-            <p>
-              A group of our Activists were supporting European Union
-              Parliament’s resolution calling for a halt to Uganda’s oil and gas
-              activities have were arrested by police. The protestors, were
-              students from Makerere University and Kyambogo University,
-              demanded that the EACOP project be stopped until certain
-              safeguards are implemented.
-            </p>
-            <a
-              href="https://www.facebook.com/100063788546140/posts/pfbid02bG2g4G6JbGLgJRer6NJjFnuSmSMz8wV2HtEbso3bQWrkWSDH3mbxUofRykbYEm35l/?mibextid=DcJ9fc"
-              >Read more</a
-            >
-          </div>
-          <div class="box">
-            <video controls width="100%">
-              <source src="images/musiri.mp4" type="video/mp4" />
-              <!-- Provide alternative video formats for broader browser support -->
-              <source src="images/musiri.mp4" type="video/webm" />
-              <!-- Add more <source> elements for additional video formats -->
-              <!-- Add a fallback message for browsers that do not support HTML5 video -->
-              Your browser does not support the video tag.
-            </video>
-            <h3>EACOP</h3>
-            <p>
-              A Video showing Musiri David and other activists who were
-              arrested, as they marched to the EU offices in Kampala to deliver
-              a petition in support of the EU Parliament resolution to halt the
-              East African Crude Oil Pipeline (EACOP) project.
-            </p>
-            <a
-              href="https://www.facebook.com/100075681623426/posts/pfbid02RGETK4Zi3C77nzrhz6Hve7kXQyNiTSQkQsFxNW5YSCSowuxrpEotZfygUJQEQfDrl/?mibextid=DcJ9fc"
-              >Read more</a
-            >
-          </div>
-          <div class="box">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="slide">
             <img
-              src="images/65b4b7a3-f5d5-48e2-9da0-33989c4a201f.jfif"
+              src="images/05c47d0c-1d04-4d65-9521-d4122d424de4.jfif"
               alt="Image 1"
             />
-            <h3>EACOP</h3>
-            <p>
-              A group of university students were arrested, as they marched to
-              the EU offices in Kampala to deliver a petition in support of the
-              EU Parliament resolution to halt the East African Crude Oil
-              Pipeline (EACOP) project.
-            </p>
-            <a
-              href="https://www.facebook.com/105583497196/posts/pfbid0AmXwx9Wnt6JQBA6REeYPRi8ZCGSxQxrC7fsbXBcDAstarvAb1LgK7yNGhxaBNKX9l/?mibextid=DcJ9fc"
-              >Read more</a
-            >
           </div>
-        </div>
-      </section>
-
-      <!-- end of corousel -->
-      <!-- <div class="row"> -->
-
-      <!-- </div> -->
-    </div>
-    <!-- endof container -->
-    <!-- ============================================================================================================================ -->
-    <!-- start of media-->
-    <section id="socialmedia">
-      <div class="container-fluid">
-        <div class="co-lg-12 kccwg_divider">
-          <span
-            ><h5 class="h5-responsive text-dark">
-              <strong>Social Media</strong>
-            </h5></span
-          >
-        </div>
-
-        <div class="row" style="text-align: center">
-          <div
-            class="col-lg-6 col-md-6 col-sm-12 col-12"
-            style="padding-top: 10px; padding-bottom: 10px"
-          >
-            <div>
-              <a
-                class="twitter-timeline"
-                data-width="444"
-                data-height="532"
-                data-theme="light"
-                href="https://twitter.com/ClimateView1?ref_src=twsrc%5Etfw"
-                >Tweets by ClimateView1</a
-              >
-              <script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"
-              ></script>
-            </div>
+          <div class="slide">
+            <img
+              src="images/65b4b7a3-f5d5-48e2-9da0-33989c4a201f.jfif"
+              alt="Image 2"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="images/766b5487-d06f-4371-bcb2-81f956facb12.jfif"
+              alt="Image 3"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="images/f965ba18-fc45-4358-9884-65bdb7d85320.jfif"
+              alt="Image 4"
+            />
+          </div>
+          <div class="slide">
+            <img src="images/court room.jfif" alt="Image 5" />
+          </div>
+          <div class="slide">
+            <img src="images/ecop.jpg" alt="Image 6" />
           </div>
 
-          <div
-            class="col-lg-6 col-md-6 col-sm-12 col-12"
-            style="padding-top: 10px; padding-bottom: 10px"
-          >
-            <iframe
-              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D108521155622533%26set%3Da.108521172289198&show_text=true&width=500"
-              width="444"
-              height="534"
-              style="border: none; overflow: hidden"
-              scrolling="no"
-              frameborder="0"
-              allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            ></iframe>
-          </div>
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
       </div>
-      <!-- endof container -->
     </section>
-    <!-- end of media -->
+    <!-- end of gallery -->
     <!-- partners -->
     <div class="container-fluid">
       <div class="col-12 kccwg_divider py-2">
@@ -736,13 +580,15 @@
 
     <script src="main.js"></script>
     <!-- Add the necessary JavaScript code -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdb-lightbox@2.4.1/dist/mdb-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/js/mdb.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/mdb-lightbox@2.4.1/dist/mdb-lightbox.min.js"></script>
     <script>
       // Wait for the document to load
       $(document).ready(function () {
@@ -754,11 +600,6 @@
       });
     </script>
     <script>
-      // initialize lightbox
-      $(function () {
-        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-      });
-
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
@@ -789,6 +630,54 @@
           },
         },
       });
+    </script>
+    <!-- <script>
+      // Initialize the lightbox
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({
+          alwaysShowClose: true,
+          galleryParentSelector: "#mdb-lightbox-ui",
+        });
+      });
+    </script> -->
+    <script>
+      let slideIndex = 1;
+      showSlide(slideIndex);
+
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      function changeSlide(n) {
+        showSlide((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlide((slideIndex = n));
+      }
+
+      function showSlide(n) {
+        const slides = document.getElementsByClassName("slide");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+      }
     </script>
   </body>
 </html>
