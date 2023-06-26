@@ -216,239 +216,80 @@
       <!--/.Navbar-->
     </header>
     <!-- =---the membership starts from here---= -->
-    
-		<div class="container-fluid">
-			<main>
-				<section id="membership_section " style="margin-top: 70px !important; margin-bottom: 7px; ">
-					<!-- Form with header -->
-					<div class="card card-cascade narrower" style="background-color: #eee; border-radius: 15px;">
+    <section id="membership">
+      <h2>Membership</h2>
+      <div class="form-container">
+        <form>
+          <label for="name">Applicant Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
 
-					  <!-- Grid row -->
-					  <div class="row mb-4">
+          <label for="organization">Organization Name:</label>
+          <input
+            type="text"
+            id="organization"
+            placeholder="Enter organization name"
+            required
+          />
 
-					    <!-- Grid column -->
-					    <div class="col-lg-11 col-12 center">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
 
-					    	<div class="view view-cascade gradient-card-header overlay"  style="background-color: #996533; margin-top: 20px; box-shadow: 0 10px 10px rgba(0, 0, 0, .3); ">
-					    	   <!-- Title -->
-					        <h4 class="mt-4"><i class="fas fa-users pr-2"></i>Membership</h4>
-					    	 </div>
+          <label for="mobile">Mobile Number:</label>
+          <input
+            type="tel"
+            id="mobile"
+            placeholder="Enter your mobile number"
+            required
+          />
 
-					      <div class="card-body form">
-					      
-					        <div class="reply-form" >
-		                       <form method="post" id="membership-form">
-		       
-		                       <div class="md-form">
-		                           <i class="fa fa-user prefix kccwg-green"></i>
-		                           <input type="text" id="name" class="form-control" required>
-		                           <label for="name">Applicant name</label>
-		                       </div>
-		                       <div class="md-form">
-		                           <i class="fa fa-building prefix kccwg-green"></i>
-		                           <input type="text" id="organization" class="form-control" required>
-		                           <label for="organization">Organization name</label>
-		                       </div>
+          <label for="country">Country of Operation:</label>
+          <input
+            type="text"
+            id="country"
+            placeholder="Enter your country"
+            required
+          />
 
-		                       <div class="md-form">
-		                           <i class="fa fa-envelope prefix icon kccwg-green"></i>
-		                           <input type="email" id="email" class="form-control" required>
-		                           <label for="email">Your email</label>
-		                       </div>
+          <label for="thematic-group">Preferred Thematic Group:</label>
+          <select id="thematic-group" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Mitigation">Mitigation thematic group</option>
+            <option value="Technology Transfer">
+              Technology transfer thematic group
+            </option>
+            <option value="Adaptation">Adaptation thematic group</option>
+            <option value="Gender and Capacity Building">
+              Gender and Capacity building thematic group
+            </option>
+            <option value="Youth and Marginalized">
+              Youth and Marginalized thematic group
+            </option>
+            <option value="Climate Change Science and Negotiations">
+              Climate Change Science and Negotiations thematic group
+            </option>
+            <option value="Climate Finance and Transparency">
+              Climate finance and Transparency thematic group
+            </option>
+            <option value="Wildlife and Tourism">
+              Wildlife and tourism thematic group
+            </option>
+          </select>
 
-		                       <div class="md-form">
-		                           <i class="fas fa-phone-alt prefix icon kccwg-green" aria-hidden="true"></i>
-		                           <input type="tel" id="phone" class="form-control">
-		                           <label for="phone">Mobile number</label>
-		                       </div>
-		                       <div class="md-form">
-		                           <i class="fa fa-map-marker prefix kccwg-green" aria-hidden="true"></i>
-		                           <input type="text" id="county" class="form-control" required>
-		                           <label for="county">County of Operation</label>
-		                       </div>
+          <input type="checkbox" required />
+          <label> I agree to confine all confidential information. </label>
 
-		                         <br>
-		                       <label>Preferred thematic group   <span style="color:#ee2400;">*choose one</span>  </label>
-		                       <div class="md-form">
-		                       	<input class="form-check-input" type="radio" name="thematicgroup" id="Mitigation_thematic_group" value="Mitigation thematic Group" />
-		                       	  <label class="form-check-label" for="Mitigation_thematic_group"> Mitigation thematic Group </label>
-		                       </div>
-		                       <div class="md-form">
-		                       	<input class="form-check-input" type="radio" name="thematicgroup" id="Technology_transfer thematic_group" value="Technology transfer thematic group" />
-		                       	  <label class="form-check-label" for="Technology_transfer thematic_group">Technology transfer thematic group</label>
-		                       </div>
-
-		                       <div class="md-form">
-		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Adaptation_thematic_group" value="Adaptation thematic group" />
-		                           <label class="form-check-label" for="Adaptation_thematic_group">Adaptation thematic group</label>
-		                       </div>
-		                        <div class="md-form">
-		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Gender_and_Capacity_building_thematic_group" value="Gender and Capacity building thematic group" />
-		                           <label class="form-check-label" for="Gender_and_Capacity_building_thematic_group">Gender and Capacity building thematic group</label>
-		                       </div>
-		                       <div class="md-form">
-		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Youth_and_Marginalized_thematic_group" value="Youth and Marginalized thematic group" />
-		                           <label class="form-check-label" for="Youth_and_Marginalized_thematic_group">Youth and Marginalized thematic group</label>
-		                       </div>
-		                       <div class="md-form">
-		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Climate_Change_Science_and_Negotiations_thematic_group" value="Climate Change Science and Negotiations thematic group" />
-		                           <label class="form-check-label" for="Climate_Change_Science_and_Negotiations_thematic_group">Climate Change Science and Negotiations thematic group</label>
-		                       </div>
-
-		                       <div class="md-form">
-		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Climate_finance_and_Transparency_thematic_group" value="Climate finance and Transparency thematic group" />
-		                           <label class="form-check-label" for="Climate_finance_and_Transparency_thematic_group">Climate finance and Transparency thematic group</label>
-		                       </div>
-		                        <div class="md-form">
-		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Wildlife_and_tourism_thematic_group" value="Wildlife and tourism thematic group" />
-		                           <label class="form-check-label" for="Wildlife_and_tourism_thematic_group">Wildlife and tourism thematic group</label>
-		                       </div>
-
-		                       
-		                       <br>
-		                         <hr class="kccwghr">
-		                       <div class="form-check">
-		                         <input class="form-check-input" type="checkbox" value=""
-		                           id="confidentility"
-		                         />
-		                         <label class="form-check-label" for="confidentility">
-		                           I agree to confine all confidential 
-		                         </label>
-		                       </div>
-		                         <br>
-		                          <div class="text-center ">
-		                           <!-- <input type="hidden" name="action" value="insert" /> -->
-		                           <button type="submit" name="submit_membership" class="btn btn-rounded btn-outline-kccwg-green waves-effect waves-light submit_membership "><span class="glyphicon glyphicon-send"></span>Submit</button>
-
-		                           
-		                       </div>
-		                       
-		                       </form>
-		                   </div> <!-- end of reply form -->
-					   	
-					      </div>
-
-					    </div>
-				</section>
-			</main>
-		</div>
-	
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
 
     <!-- end of membership -->
-    <!-- partners -->
-    <div class="container-fluid">
-      <div class="col-12 kccwg_divider py-2">
-        <span
-          ><h5 class="h5-responsive text-dark">
-            <strong>Partners</strong>
-          </h5></span
-        >
-      </div>
-      <div class="row mb-5">
-        <div class="col-12">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/solidarity uganda.png"
-                  alt="solidarity Uganda"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/GAYO.png"
-                  alt="Green Africa Youth"
-                  title="our partners"
-                  style="width: auto; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
 
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/AFIEGO.png"
-                  alt="AFIEGO"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/ife-logo.png"
-                  alt="ife"
-                  title="our partners"
-                  style="
-                    width: 250px;
-                    height: 100px;
-                    object-fit: cover;
-                    padding: 2px auto;
-                  "
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/solidarity uganda.png"
-                  alt="solidarity Uganda"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/GAYO.png"
-                  alt="Green Africa Youth"
-                  title="our partners"
-                  style="width: auto; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/AFIEGO.png"
-                  alt="AFIEGO"
-                  title="our partners"
-                  style="width: 150px; height: 100px; object-fit: cover"
-                />
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="" target="_blank">
-                <img
-                  src="images/ife-logo.png"
-                  alt="ife"
-                  title="our partners"
-                  style="
-                    width: 250px;
-                    height: 100px;
-                    object-fit: cover;
-                    padding: 2px auto;
-                  "
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of row -->
-    </div>
-    <!-- endof container -->
-    <!-- end of about -->
     <!-- footer -->
     <div class="container-fluid pt-2">
       <footer class="footer-section">
@@ -632,8 +473,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/js/mdb.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
-
     <script>
       // Wait for the document to load
       $(document).ready(function () {
@@ -642,38 +481,6 @@
           // Toggle the collapse class on the collapsible content
           $("#kccwg_all_nav").collapse("toggle");
         });
-      });
-    </script>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 1500,
-        // animateOut: 'slideOutDown',
-        //    animateIn: 'flipInX',
-        // stagePadding:40,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1,
-            stagePadding: 20,
-          },
-          400: {
-            items: 2,
-            stagePadding: 25,
-          },
-          600: {
-            items: 3,
-            stagePadding: 30,
-          },
-          1000: {
-            items: 4,
-            stagePadding: 40,
-          },
-        },
       });
     </script>
   </body>
