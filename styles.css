@@ -1149,5 +1149,6 @@ form label.checkbox-label {
 form label.checkbox-label input[type="checkbox"] {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 50px;
+  text-align: left;
+  margin-right: 5px;
 }
