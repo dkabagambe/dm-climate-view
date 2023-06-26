@@ -32,7 +32,7 @@
 
     <meta name="author" content="daniel kabagambe, danielkabagambe@gmail.com" />
     <!--  author of a page -->
-    <title>Gallery | Dm Climate View</title>
+    <title>Membership | Dm Climate View</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -190,7 +190,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="membership.html"
+                  <a class="nav-link" href=""
                     ><i class="fas fa-users"></i>&nbsp;Membership</a
                   >
                 </li>
@@ -215,84 +215,126 @@
       </div>
       <!--/.Navbar-->
     </header>
-    <!-- =---the image gallery starts from here---= -->
-    <!-- Gallery -->
-    <section class="gallery">
-      <h5>images showing different activism</h5>
+    <!-- =---the membership starts from here---= -->
+    
+		<div class="container-fluid">
+			<main>
+				<section id="membership_section " style="margin-top: 70px !important; margin-bottom: 7px; ">
+					<!-- Form with header -->
+					<div class="card card-cascade narrower" style="background-color: #eee; border-radius: 15px;">
 
-      <div id="gallery">
-        <div class="thumbnail" onclick="openModal();currentSlide(1)">
-          <img
-            src="images/05c47d0c-1d04-4d65-9521-d4122d424de4.jfif"
-            alt="Image 1"
-          />
-        </div>
-        <div class="thumbnail" onclick="openModal();currentSlide(2)">
-          <img
-            src="images/65b4b7a3-f5d5-48e2-9da0-33989c4a201f.jfif"
-            alt="Image 2"
-          />
-        </div>
-        <div class="thumbnail" onclick="openModal();currentSlide(3)">
-          <img
-            src="images/766b5487-d06f-4371-bcb2-81f956facb12.jfif"
-            alt="Image 3"
-          />
-        </div>
-        <div class="thumbnail" onclick="openModal();currentSlide(4)">
-          <img
-            src="images/f965ba18-fc45-4358-9884-65bdb7d85320.jfif"
-            alt="Image 4"
-          />
-        </div>
-        <div class="thumbnail" onclick="openModal();currentSlide(5)">
-          <img src="images/court room.jfif" alt="Image 5" />
-        </div>
-        <div class="thumbnail" onclick="openModal();currentSlide(6)">
-          <img src="images/ecop.jpg" alt="Image 6" />
-        </div>
-      </div>
+					  <!-- Grid row -->
+					  <div class="row mb-4">
 
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-          <div class="slide">
-            <img
-              src="images/05c47d0c-1d04-4d65-9521-d4122d424de4.jfif"
-              alt="Image 1"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="images/65b4b7a3-f5d5-48e2-9da0-33989c4a201f.jfif"
-              alt="Image 2"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="images/766b5487-d06f-4371-bcb2-81f956facb12.jfif"
-              alt="Image 3"
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="images/f965ba18-fc45-4358-9884-65bdb7d85320.jfif"
-              alt="Image 4"
-            />
-          </div>
-          <div class="slide">
-            <img src="images/court room.jfif" alt="Image 5" />
-          </div>
-          <div class="slide">
-            <img src="images/ecop.jpg" alt="Image 6" />
-          </div>
+					    <!-- Grid column -->
+					    <div class="col-lg-11 col-12 center">
 
-          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-          <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-      </div>
-    </section>
-    <!-- end of gallery -->
+					    	<div class="view view-cascade gradient-card-header overlay"  style="background-color: #996533; margin-top: 20px; box-shadow: 0 10px 10px rgba(0, 0, 0, .3); ">
+					    	   <!-- Title -->
+					        <h4 class="mt-4"><i class="fas fa-users pr-2"></i>Membership</h4>
+					    	 </div>
+
+					      <div class="card-body form">
+					      
+					        <div class="reply-form" >
+		                       <form method="post" id="membership-form">
+		       
+		                       <div class="md-form">
+		                           <i class="fa fa-user prefix kccwg-green"></i>
+		                           <input type="text" id="name" class="form-control" required>
+		                           <label for="name">Applicant name</label>
+		                       </div>
+		                       <div class="md-form">
+		                           <i class="fa fa-building prefix kccwg-green"></i>
+		                           <input type="text" id="organization" class="form-control" required>
+		                           <label for="organization">Organization name</label>
+		                       </div>
+
+		                       <div class="md-form">
+		                           <i class="fa fa-envelope prefix icon kccwg-green"></i>
+		                           <input type="email" id="email" class="form-control" required>
+		                           <label for="email">Your email</label>
+		                       </div>
+
+		                       <div class="md-form">
+		                           <i class="fas fa-phone-alt prefix icon kccwg-green" aria-hidden="true"></i>
+		                           <input type="tel" id="phone" class="form-control">
+		                           <label for="phone">Mobile number</label>
+		                       </div>
+		                       <div class="md-form">
+		                           <i class="fa fa-map-marker prefix kccwg-green" aria-hidden="true"></i>
+		                           <input type="text" id="county" class="form-control" required>
+		                           <label for="county">County of Operation</label>
+		                       </div>
+
+		                         <br>
+		                       <label>Preferred thematic group   <span style="color:#ee2400;">*choose one</span>  </label>
+		                       <div class="md-form">
+		                       	<input class="form-check-input" type="radio" name="thematicgroup" id="Mitigation_thematic_group" value="Mitigation thematic Group" />
+		                       	  <label class="form-check-label" for="Mitigation_thematic_group"> Mitigation thematic Group </label>
+		                       </div>
+		                       <div class="md-form">
+		                       	<input class="form-check-input" type="radio" name="thematicgroup" id="Technology_transfer thematic_group" value="Technology transfer thematic group" />
+		                       	  <label class="form-check-label" for="Technology_transfer thematic_group">Technology transfer thematic group</label>
+		                       </div>
+
+		                       <div class="md-form">
+		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Adaptation_thematic_group" value="Adaptation thematic group" />
+		                           <label class="form-check-label" for="Adaptation_thematic_group">Adaptation thematic group</label>
+		                       </div>
+		                        <div class="md-form">
+		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Gender_and_Capacity_building_thematic_group" value="Gender and Capacity building thematic group" />
+		                           <label class="form-check-label" for="Gender_and_Capacity_building_thematic_group">Gender and Capacity building thematic group</label>
+		                       </div>
+		                       <div class="md-form">
+		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Youth_and_Marginalized_thematic_group" value="Youth and Marginalized thematic group" />
+		                           <label class="form-check-label" for="Youth_and_Marginalized_thematic_group">Youth and Marginalized thematic group</label>
+		                       </div>
+		                       <div class="md-form">
+		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Climate_Change_Science_and_Negotiations_thematic_group" value="Climate Change Science and Negotiations thematic group" />
+		                           <label class="form-check-label" for="Climate_Change_Science_and_Negotiations_thematic_group">Climate Change Science and Negotiations thematic group</label>
+		                       </div>
+
+		                       <div class="md-form">
+		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Climate_finance_and_Transparency_thematic_group" value="Climate finance and Transparency thematic group" />
+		                           <label class="form-check-label" for="Climate_finance_and_Transparency_thematic_group">Climate finance and Transparency thematic group</label>
+		                       </div>
+		                        <div class="md-form">
+		                           <input class="form-check-input" type="radio" name="thematicgroup" id="Wildlife_and_tourism_thematic_group" value="Wildlife and tourism thematic group" />
+		                           <label class="form-check-label" for="Wildlife_and_tourism_thematic_group">Wildlife and tourism thematic group</label>
+		                       </div>
+
+		                       
+		                       <br>
+		                         <hr class="kccwghr">
+		                       <div class="form-check">
+		                         <input class="form-check-input" type="checkbox" value=""
+		                           id="confidentility"
+		                         />
+		                         <label class="form-check-label" for="confidentility">
+		                           I agree to confine all confidential 
+		                         </label>
+		                       </div>
+		                         <br>
+		                          <div class="text-center ">
+		                           <!-- <input type="hidden" name="action" value="insert" /> -->
+		                           <button type="submit" name="submit_membership" class="btn btn-rounded btn-outline-kccwg-green waves-effect waves-light submit_membership "><span class="glyphicon glyphicon-send"></span>Submit</button>
+
+		                           
+		                       </div>
+		                       
+		                       </form>
+		                   </div> <!-- end of reply form -->
+					   	
+					      </div>
+
+					    </div>
+				</section>
+			</main>
+		</div>
+	
+
+    <!-- end of membership -->
     <!-- partners -->
     <div class="container-fluid">
       <div class="col-12 kccwg_divider py-2">
@@ -633,54 +675,6 @@
           },
         },
       });
-    </script>
-    <!-- <script>
-      // Initialize the lightbox
-      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox({
-          alwaysShowClose: true,
-          galleryParentSelector: "#mdb-lightbox-ui",
-        });
-      });
-    </script> -->
-    <script>
-      let slideIndex = 1;
-      showSlide(slideIndex);
-
-      function openModal() {
-        document.getElementById("myModal").style.display = "block";
-      }
-
-      function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-      }
-
-      function changeSlide(n) {
-        showSlide((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlide((slideIndex = n));
-      }
-
-      function showSlide(n) {
-        const slides = document.getElementsByClassName("slide");
-
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-
-        slides[slideIndex - 1].style.display = "block";
-      }
     </script>
   </body>
 </html>
