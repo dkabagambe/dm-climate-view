@@ -1154,7 +1154,9 @@ form label.checkbox-label input[type="checkbox"] {
   margin-right: 5px;
 }
 .map {
-  margin: auto; /* Adds space of 20px on top and bottom */
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; /* Adjust the left and right padding as needed */
 }
 
 .map iframe {
@@ -1162,7 +1164,7 @@ form label.checkbox-label input[type="checkbox"] {
   height: 450px;
   border: 0;
 }
-.down-button {
+\ .down-button {
   font-size: 20px;
   padding: 10px;
   background: transparent;
