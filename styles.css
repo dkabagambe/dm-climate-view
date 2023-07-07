@@ -862,7 +862,7 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   font-weight: 600;
-  color: #434343;
+  color: #222222 !important;
   display: grid;
   place-items: center;
   padding: 20px 10px;
