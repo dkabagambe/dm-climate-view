@@ -1172,3 +1172,24 @@ form label.checkbox-label input[type="checkbox"] {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+  display: flex;
+  margin-top: 20px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: "Lato";
+}
