@@ -13,9 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Send email
   $headers = "From: $email";
   if (mail($to, $subject, $message, $headers)) {
-    echo 'Email sent successfully!';
     // Clear the form data after successful submission
     $email = '';
+    
+    // Redirect to index.html
+    header('Location: index.html');
+    exit; // Make sure to exit after redirecting
   } else {
     echo 'Error sending the email. Please try again.';
   }
