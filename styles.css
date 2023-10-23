@@ -1253,3 +1253,33 @@ form label.checkbox-label input[type="checkbox"] {
   line-height: 2;
   word-wrap: break-word;
 }
+.clean {
+  height: 100%;
+  width: 100%;
+}
+.clean h4 {
+  color: green;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  text-align: center; /* Adjusted to 'left' instead of 'center' */
+  font-family: garamond;
+}
+.clean h5 {
+  color: #212121;
+  text-transform: capitalize;
+  font-family: serif;
+  font-size: 1.5;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2;
+}
+.clean p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: garamond;
+  word-wrap: break-word;
+  color: #222;
+  text-align: left;
+}
