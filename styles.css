@@ -1258,7 +1258,7 @@ form label.checkbox-label input[type="checkbox"] {
   width: 100%;
 }
 .clean h4 {
-  color: green;
+  color: rgb(21, 255, 21) !important;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 2px;
